@@ -1,7 +1,7 @@
 ---
 title: "Replication of Study by Kim & Kim (2024, PNAS)"
 author: "Jinwoo Lee (jil527@ucsd.edu)"
-date: "`r format(Sys.time(), '%B %d, %Y')`".
+date: "`r format(Sys.time(), '%B %d, %Y')`"
 format:
   html:
     toc: true
@@ -23,10 +23,11 @@ My plan is to (1) **reproduce** these findings using the original German LEMON d
 I do not expect major challenges in data acquisition, but I anticipate some conceptual/analytic challenges in understanding and implementing the analytic framework. Since the study is observational rather than experimentally manipulated, there were no stimuli presented; participants only completed demographic and psychological assessments before MRI scanning. For replication, I plan to use the aforementioned Korean open dataset, WECANDOIT, so I do not foresee practical obstacles in data collection procedures. 
 
 However, there are two main challenges in understanding and practicing the Anna Karenina framework.
-* First, Anna Karenina model testing does not test correlations at the level of individual samples, but rather at the level of their combinations. For example, Kim & Kim (2022 *PNAS*) tested the correlations of averaged trait anxiety scores and neuroanatomical dissimilarity between participants. Since these pairwise combinations are not statistically independent, standard correlation tests cannot be directly applied. I need to better understand how this issue is addressed in practice. 
-* Second, in the study, morphological dissimilarity in amygdala-vmPFC white matter pathway between two participants was quantified using Euclidean distance (see Fig 2 in the paper). However, it is not clear for me which specific metrics were used to compute this distance - *What does this metric mean by the distance between what?*
 
-By carefully working through the analysis script and resolving these two conceptual challenges, I aim to successfuly complete the replication project. 
+- **First**, Anna Karenina model testing does not test correlations at the level of individual samples, but rather at the level of their combinations. For example, Kim & Kim (2022 *PNAS*) tested the correlations of averaged trait anxiety scores and neuroanatomical dissimilarity between participants. Since these pairwise combinations are not statistically independent, standard correlation tests cannot be directly applied. I need to better understand how this issue is addressed in practice. 
+- **Second**, in the study, morphological dissimilarity in amygdala-vmPFC white matter pathway between two participants was quantified using Euclidean distance (see Fig 2 in the paper). However, it is not clear for me which specific metrics were used to compute this distance - *What does this metric mean by the distance between what?*
+
+By carefully working through the analysis script and resolving these two conceptual challenges, I aim to successfuly complete the replication project.
 
 
 ## Methods
