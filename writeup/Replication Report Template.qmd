@@ -1,7 +1,7 @@
 ---
-title: "Replication of Study X by Sample & Sample (20xx, Psychological Science)"
-author: "Replication Author[s] (contact information)"
-date: "`r format(Sys.time(), '%B %d, %Y')`"
+title: "Replication of Study X by Kim & Kim (2024, PNAS)"
+author: "Jinwoo Lee (jil527@ucsd.edu)"
+date: "`r format(Sys.time(), '%B %d, %Y')`".  ### 수정 필요
 format:
   html:
     toc: true
