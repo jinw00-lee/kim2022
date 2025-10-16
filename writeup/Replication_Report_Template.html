@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jinwoo Lee (jil527@ucsd.edu)">
-<meta name="dcterms.date" content="2025-10-01">
+<meta name="dcterms.date" content="2025-10-15">
 
-<title>Replication of Study by Kim &amp; Kim (2024, PNAS)</title>
+<title>Reproduction of Study by Kim &amp; Kim (2022, PNAS)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,18 +25,18 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="Replication Report Template_files/libs/clipboard/clipboard.min.js"></script>
-<script src="Replication Report Template_files/libs/quarto-html/quarto.js" type="module"></script>
-<script src="Replication Report Template_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="Replication Report Template_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="Replication Report Template_files/libs/quarto-html/popper.min.js"></script>
-<script src="Replication Report Template_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="Replication Report Template_files/libs/quarto-html/anchor.min.js"></script>
-<link href="Replication Report Template_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Replication Report Template_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="Replication Report Template_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="Replication Report Template_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="Replication Report Template_files/libs/bootstrap/bootstrap-1e118674f8eeaf0dc11d6faf9a2d8791.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="Replication_Report_Template_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Replication_Report_Template_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="Replication_Report_Template_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="Replication_Report_Template_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="Replication_Report_Template_files/libs/quarto-html/popper.min.js"></script>
+<script src="Replication_Report_Template_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Replication_Report_Template_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Replication_Report_Template_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Replication_Report_Template_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Replication_Report_Template_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Replication_Report_Template_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Replication_Report_Template_files/libs/bootstrap/bootstrap-1e118674f8eeaf0dc11d6faf9a2d8791.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Replication of Study by Kim &amp; Kim (2024, PNAS)</h1>
+<h1 class="title">Reproduction of Study by Kim &amp; Kim (2022, PNAS)</h1>
 </div>
 
 
@@ -100,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 1, 2025</p>
+      <p class="date">October 15, 2025</p>
     </div>
   </div>
   
@@ -117,22 +117,25 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <section id="motivation" class="level3">
 <h3 class="anchored" data-anchor-id="motivation">Motivation</h3>
-<p>For my First Year Project, I aim to extend the <strong>Anna Karenina</strong> model testing framework (Finn et al., 2020 <em>NeuroImage</em>), which is increasingly used as a representative methodology in social and affective neuroscience, into a multivariate approach. This framework will help identify and validate the psychological profiles that best explain individual differences in brain function or structure. Building on this, during my PhD I plan to apply this framework to naturalistic neuroimaging data to address one of my core theoretical questions: <em>Which combination of psychological profiles best explain individual differences in how the brain encodes emotion concepts?</em></p>
-<p>As a first step, it will be valuable to practice traditional Anna Karenina modeling in affective neuroscience by reproducing key findings from prior studies and replicating them on new datasets. I chose Kim &amp; Kim (2022 <em>PNAS</em>) as a target of replication project. Using Anna Karenina model, this paper tested the hypothesis that higher trait anxiety would be correlated with greater heterogeneity in morphology of amygdala-vmPFC pathway. They reported the weak but significant correlations (<em>r</em> = .13).</p>
+<p>For my First Year Project, I aim to extend the <strong>Anna Karenina</strong> model testing framework (Finn et al., 2020 <em>NeuroImage</em>), which is increasingly used as a representative methodology in social and affective neuroscience, into a multivariate approach. This framework will help identify and validate the psychological profiles that best explain the structure of individual differences in brain function or structure. Building on this, during my PhD I plan to apply this framework to naturalistic neuroimaging data to address one of my core theoretical questions: <em>Which combination of psychological profiles best explain individual differences in how the brain encodes emotion concepts? (e.g., combinations of personality traits, cultural backgrounds, emotion knowledges, mental health, etc.)</em></p>
+<p>As a first step, it will be valuable to practice traditional Anna Karenina modeling in affective neuroscience by reproducing key findings from prior studies. I chose Kim &amp; Kim (2022, <em>PNAS</em>) as a target of reproduction project. Using Anna Karenina model, this paper tested the hypothesis that higher trait anxiety would be correlated with greater heterogeneity in morphology of amygdala-vmPFC white matter pathway.</p>
 </section>
 <section id="overall-plan" class="level3">
 <h3 class="anchored" data-anchor-id="overall-plan">Overall Plan</h3>
-<p>My plan is to (1) <strong>reproduce</strong> these findings using the original German LEMON dataset employed in the study, and (2) <strong>replicate</strong> the results with a new open dataset at the high-level, WECANDOIT, which includes the same trait anxiety measures and white matter tractography data from about 150 Korean adolescents. Through this, I hope to examine how generalizable structural brain differences are in explaining specific emotional traits, while also training the methodological framework that will serve as the foundation of my First Year Project.</p>
+<p>The ultimate goal of this project is to reproduce the key finding of Kim &amp; Kim (2022, <em>PNAS</em>) using the same dataset, but with analysis scripts that I develop by myself while following the same analytic logics in the paper. The specific finding I aim to replicate is as follows:</p>
+<blockquote class="blockquote">
+<p>Mantel tests revealed that the (young adults’) left amygdala–ventral PFC tract-morphology dissimilarity matrix was significantly correlated with the trait-anxiety dissimilarity matrix (<em>P</em> = 0.036).</p>
+</blockquote>
+<p>To achieve this, the project will proceed in three main steps.</p>
+<ul>
+<li><p>First, <strong>preprocessing and neural analysis:</strong> the diffusion-weighted MRI data of the <em>young adult</em> group (20-35 years old, <em>N</em> = 119) from the LEMON dataset will be preprocessed to compute the left amygdala-ventral PFC tract-morphology dissimilarity matrix across all participant pairs.</p></li>
+<li><p>Second, <strong>behavioral analysis:</strong> Using the same dataset, the pairwise mean trait-anxiety scores for all participant pairs will be calculated.</p></li>
+<li><p>Third, <strong>anna karenina testing:</strong> A Mantel Permutation test between the two matrices obtained above would be applied to reproduce the key finding.</p></li>
+</ul>
 </section>
 <section id="stimuli-procedures-and-expected-challenges" class="level3">
 <h3 class="anchored" data-anchor-id="stimuli-procedures-and-expected-challenges">Stimuli, Procedures, and Expected Challenges</h3>
-<p>I do not expect major challenges in data acquisition, but I anticipate some conceptual/analytic challenges in understanding and implementing the analytic framework. Since the study is observational rather than experimentally manipulated, there were no stimuli presented; participants only completed demographic and psychological assessments before MRI scanning. For replication, I plan to use the aforementioned Korean open dataset, WECANDOIT, so I do not foresee practical obstacles in data collection procedures.</p>
-<p>However, there are two main challenges in understanding and practicing the Anna Karenina framework.</p>
-<ul>
-<li><strong>First</strong>, Anna Karenina model testing does not test correlations at the level of individual samples, but rather at the level of their combinations. For example, Kim &amp; Kim (2022 <em>PNAS</em>) tested the correlations of averaged trait anxiety scores and neuroanatomical dissimilarity between participants. Since these pairwise combinations are not statistically independent, standard correlation tests cannot be directly applied. I need to better understand how this issue is addressed in practice.</li>
-<li><strong>Second</strong>, in the study, morphological dissimilarity in amygdala-vmPFC white matter pathway between two participants was quantified using Euclidean distance (see Fig 2 in the paper). However, it is not clear for me which specific metrics were used to compute this distance - <em>What does this metric mean by the distance between what?</em></li>
-</ul>
-<p>By carefully working through the analysis script and resolving these two conceptual challenges, I aim to successfuly complete the replication project.</p>
+<p>I do not expect major challenges in data acquisition, but I anticipate some analytic challenges specifically in preprocessing since authors do not share preprocessing scripts in their github repositories. For this reason, I will try to imitate their preprocessing pipeline based on some details described in <em>Methods</em> section in the paper.</p>
 </section>
 </section>
 <section id="methods" class="level2">
